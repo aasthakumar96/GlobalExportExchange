@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog &amp; Insights — Global Export Exchange (GEE) | Indian Trade Updates</title>
+  <meta name="description" content="Stay updated with the latest trends in global exports, energy trade, ayurvedic products, and MSME growth strategies from Global Export Exchange (GEE)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/css/variables.css" /><link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" /><link rel="stylesheet" href="../assets/css/animations.css" />
+  <style>
+    /* Blog-specific card styles */
+    .blog-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius-lg);
+      overflow: hidden;
+      transition: all var(--t-base) var(--ease-smooth);
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      border-color: var(--glass-border-hover);
+      transform: translateY(-5px);
+      box-shadow: var(--gold-glow), var(--card-shadow);
+    }
+    .blog-card__img-wrap {
+      overflow: hidden;
+      height: 200px;
+      flex-shrink: 0;
+    }
+    .blog-card__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.7) brightness(0.8);
+      transition: all var(--t-slow);
+      display: block;
+    }
+    .blog-card:hover .blog-card__img {
+      transform: scale(1.05);
+      filter: saturate(1) brightness(0.9);
+    }
+    .blog-card__body {
+      padding: var(--sp-6);
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+      margin-bottom: var(--sp-3);
+      font-size: var(--size-xs);
+      color: var(--grey-mid);
+    }
+    .blog-card__cat {
+      background: rgba(201,168,76,0.15);
+      color: var(--gold);
+      padding: 2px 10px;
+      border-radius: 50px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+    .blog-card__title {
+      font-family: var(--font-heading);
+      font-size: var(--size-xl);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: var(--sp-3);
+    }
+    .blog-card__excerpt {
+      font-size: var(--size-sm);
+      color: var(--grey-mid);
+      line-height: 1.7;
+      flex: 1;
+      max-width: none;
+    }
+    .blog-card__read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-2);
+      font-size: var(--size-xs);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: var(--sp-5);
+      transition: gap var(--t-fast);
+    }
+    .blog-card:hover .blog-card__read-more { gap: var(--sp-3); }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar__logo"><div class="navbar__logo-icon">G</div><div class="navbar__logo-text"><span>Global Export</span><span>Exchange (GEE)</span></div></a>
+      <div class="navbar__links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../products.html">Products</a>
+        <a href="../services.html">Services</a>
+        <a href="../network.html">Network</a>
+        <a href="index.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <button class="navbar__hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <nav class="navbar__mobile" id="nav-mobile">
+    <a href="../index.html">Home</a><a href="../about.html">About</a><a href="../products.html">Products</a>
+    <a href="../services.html">Services</a><a href="../network.html">Network</a>
+    <a href="index.html">Blog</a><a href="../contact.html">Contact</a>
+    <a href="../rfq.html" class="btn btn--primary btn--sm">Get a Quote</a>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">Industry Knowledge</span>
+      <h1>Trade Insights &amp; Updates</h1>
+      <p>Your guide to navigating the complex landscape of international trade and sourcing from India.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+        <!-- Article 1 -->
+        <article class="blog-card reveal">
+          <div class="blog-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1524311583145-d4fa64687251?w=600&q=80" alt="Export guide — international shipping" class="blog-card__img" loading="lazy" />
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__cat">Guide</span>
+              <span>March 28, 2024</span>
+            </div>
+            <h3 class="blog-card__title">How to Export from India: A Beginner's Guide</h3>
+            <p class="blog-card__excerpt">Navigating the initial hurdles of starting an export business in India, from IEC registration to finding your first international buyer.</p>
+            <a href="post-template.html" class="blog-card__read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card reveal reveal-delay-1">
+          <div class="blog-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Trade documentation and paperwork" class="blog-card__img" loading="lazy" />
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__cat">Education</span>
+              <span>March 20, 2024</span>
+            </div>
+            <h3 class="blog-card__title">Understanding Trade Documentation: What Every Buyer Needs to Know</h3>
+            <p class="blog-card__excerpt">A comprehensive breakdown of the essential documents required for smooth customs clearance and secure international trade.</p>
+            <a href="post-template.html" class="blog-card__read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card reveal reveal-delay-2">
+          <div class="blog-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&q=80" alt="Top Indian export products 2025" class="blog-card__img" loading="lazy" />
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__cat">Trends</span>
+              <span>March 12, 2024</span>
+            </div>
+            <h3 class="blog-card__title">Top Export Products from India in 2025</h3>
+            <p class="blog-card__excerpt">Exploring the high-growth categories in the Indian export market and why global buyers are turning to India for sourcing.</p>
+            <a href="post-template.html" class="blog-card__read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center reveal" style="margin-top: var(--sp-12);">
+        <p style="color: var(--grey-mid); margin-bottom: var(--sp-4);">Have a trade topic you'd like us to cover?</p>
+        <a href="../contact.html" class="btn btn--outline"><i class="fas fa-envelope"></i> Suggest a Topic</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="navbar__logo" style="margin-bottom: var(--sp-4);">
+            <div class="navbar__logo-icon">G</div>
+            <div class="navbar__logo-text"><span>Global Export</span><span>Exchange (GEE)</span></div>
+          </a>
+          <p>Your trusted Gurgaon-based export-import partner connecting commodities with the global market.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../network.html">Network</a></li>
+            <li><a href="../certifications.html">Certifications</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Trade</h5>
+          <ul>
+            <li><a href="../products.html">All Products</a></li>
+            <li><a href="../rfq.html">Request Quote</a></li>
+            <li><a href="../supplier.html">Become Supplier</a></li>
+            <li><a href="../trust.html">Trust &amp; Compliance</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <div class="footer__contact-item"><i class="fas fa-phone ico"></i><span><a href="tel:+919810818274">+91-9810818274</a></span></div>
+          <div class="footer__contact-item"><i class="fab fa-whatsapp ico"></i><span><a href="https://wa.me/919810818274" target="_blank" rel="noopener">WhatsApp Direct</a></span></div>
+          <div class="footer__contact-item"><i class="fas fa-envelope ico"></i><span><a href="mailto:trade@sgexportexchange.com">trade@sgexportexchange.com</a></span></div>
+          <div class="footer__contact-item"><i class="fas fa-location-dot ico"></i><span>Gurgaon, Haryana</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Global Export Exchange (GEE). All rights reserved.</p>
+        <div class="footer__bottom-links"><a href="../trust.html">Privacy Policy</a><a href="../trust.html">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919810818274" class="whatsapp-float" id="whatsapp-fab" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+  <button class="chatbot-trigger" id="chatbot-trigger" aria-label="Open chat">💬</button>
+  <div class="chatbot-widget" id="chatbot-widget" role="dialog">
+    <div class="chatbot-header">
+      <div><h6>GEE Trade Assistant</h6><small>Typically replies instantly</small></div>
+      <button class="chatbot-header-close" id="chatbot-close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages" aria-live="polite"></div>
+    <div class="chatbot-suggestions"><button class="chat-suggestion">Min order quantity?</button><button class="chat-suggestion">Shipping time?</button></div>
+    <div class="chatbot-input-row">
+      <input type="text" id="chatbot-input" placeholder="Ask a trade question…" />
+      <button class="chatbot-send" id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="../assets/js/animations.js"></script><script src="../assets/js/currency.js"></script><script src="../assets/js/whatsapp.js"></script><script src="../assets/js/main.js"></script>
+</body>
+</html>

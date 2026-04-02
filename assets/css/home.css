@@ -1,0 +1,119 @@
+/* ============================================
+   SHARMA'S GLOBAL EXPORT EXCHANGE
+   Homepage-specific styles — home.css
+   ============================================ */
+
+/* Product cards 5-column custom grid */
+.product-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--sp-5);
+}
+@media (max-width: 1200px) {
+  .product-cards-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .product-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .product-cards-grid { grid-template-columns: 1fr; }
+}
+
+/* Cert badges strip */
+.cert-badges-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--sp-6);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--sp-8);
+}
+.cert-badge-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+}
+.cert-badge-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(201,168,76,0.12);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.cert-badge-title {
+  font-weight: 700;
+  font-size: var(--size-base);
+  color: var(--white);
+  line-height: 1.2;
+}
+.cert-badge-sub {
+  font-size: var(--size-xs);
+  color: var(--grey-mid);
+}
+.cert-badge-sep {
+  width: 1px;
+  height: 50px;
+  background: var(--glass-border);
+}
+@media (max-width: 768px) {
+  .cert-badge-sep { display: none; }
+  .cert-badges-row { flex-direction: column; align-items: flex-start; }
+}
+
+/* CTA Block */
+.cta-block {
+  position: relative;
+  background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-light) 100%);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--sp-16) var(--sp-12);
+  text-align: center;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(201,168,76,0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+.cta-block h2 {
+  font-size: clamp(var(--size-2xl), 4vw, var(--size-4xl));
+  margin-bottom: var(--sp-4);
+  position: relative;
+}
+.cta-block p {
+  color: var(--grey-mid);
+  font-size: var(--size-md);
+  margin: 0 auto var(--sp-8);
+  max-width: 55ch;
+  position: relative;
+}
+.cta-block .overline { position: relative; }
+.cta-block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .cta-block { padding: var(--sp-10) var(--sp-6); }
+  .cta-block__buttons { flex-direction: column; }
+  .cta-block__buttons .btn { width: 100%; justify-content: center; }
+}
+
+/* Hero additional styles */
+@media (max-width: 768px) {
+  .hero__ctas { flex-direction: column; }
+  .hero__ctas .btn { width: 100%; justify-content: center; }
+}

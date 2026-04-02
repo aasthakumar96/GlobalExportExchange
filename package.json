@@ -1,0 +1,13 @@
+{
+  "name": "sharmas-global-export-exchange",
+  "version": "1.0.0",
+  "description": "Premium Indian Export House Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

@@ -1,0 +1,164 @@
+/* ============================================
+   SHARMA'S GLOBAL EXPORT EXCHANGE
+   About Page — about.css
+   ============================================ */
+
+/* Overview Grid */
+.about-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-16);
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .about-overview-grid { grid-template-columns: 1fr; gap: var(--sp-10); }
+}
+
+/* Stat pills */
+.about-overview-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-pill);
+  padding: var(--sp-2) var(--sp-4);
+  font-size: var(--size-sm);
+  color: var(--white);
+  font-weight: 500;
+}
+.stat-pill i { color: var(--gold); }
+
+/* About image card */
+.about-image-card {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+.about-image-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  filter: saturate(0.7) brightness(0.8);
+  display: block;
+}
+.about-image-badge {
+  position: absolute;
+  bottom: var(--sp-5);
+  left: var(--sp-5);
+  background: rgba(10,14,26,0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius);
+  padding: var(--sp-3) var(--sp-5);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--white);
+  font-size: var(--size-sm);
+  font-weight: 600;
+}
+.about-image-badge i { color: var(--gold); }
+.about-image-badge small { display: block; font-weight: 400; color: var(--grey-mid); font-size: var(--size-xs); }
+
+/* Vision/Mission icons */
+.vm-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(201,168,76,0.12);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: var(--sp-5);
+}
+.vm-title {
+  font-family: var(--font-heading);
+  font-size: var(--size-2xl);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--sp-4);
+}
+
+/* Founder Card */
+.founder-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--sp-12);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--sp-10);
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .founder-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .founder-card .gold-divider { margin-left: auto; margin-right: auto; }
+  .founder-card__actions { flex-direction: column; }
+  .founder-card__actions .btn { width: 100%; justify-content: center; }
+}
+.founder-card__avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius-lg);
+  background: linear-gradient(135deg, var(--navy-light), var(--navy-mid));
+  border: 2px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  max-width: 280px;
+}
+@media (max-width: 768px) {
+  .founder-card__avatar { max-width: 180px; margin: 0 auto; font-size: 2.5rem; }
+}
+.founder-card__name {
+  font-family: var(--font-heading);
+  font-size: clamp(var(--size-2xl), 3vw, var(--size-3xl));
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--sp-4);
+}
+.founder-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+.founder-photo-note {
+  margin-top: var(--sp-4) !important;
+  font-size: var(--size-xs);
+  color: var(--grey-dark);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  max-width: none;
+}
+
+/* CTA block reuse */
+.cta-block { position: relative; border-radius: var(--border-radius-lg); padding: var(--sp-16) var(--sp-12); text-align: center; overflow: hidden; }
+.cta-block h2 { font-size: clamp(var(--size-2xl), 4vw, var(--size-4xl)); margin-bottom: var(--sp-4); }
+.cta-block p { color: var(--grey-mid); font-size: var(--size-md); margin: 0 auto var(--sp-8); max-width: 55ch; }
+.cta-block__buttons { display: flex; flex-wrap: wrap; gap: var(--sp-4); justify-content: center; }
+@media (max-width: 600px) {
+  .cta-block { padding: var(--sp-10) var(--sp-6); }
+  .cta-block__buttons { flex-direction: column; }
+  .cta-block__buttons .btn { width: 100%; justify-content: center; }
+}
