@@ -1,5 +1,5 @@
 /* ============================================
-   SHARMA'S GLOBAL EXPORT EXCHANGE
+   GLOBAL EXPORT EXCHANGE
    Currency Converter — currency.js
    ============================================ */
 

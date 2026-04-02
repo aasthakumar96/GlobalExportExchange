@@ -1,5 +1,5 @@
 /* ============================================
-   SHARMA'S GLOBAL EXPORT EXCHANGE
+   GLOBAL EXPORT EXCHANGE
    Main JS — main.js
    ============================================ */
 
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* =========================================
      NAVBAR — Scroll + Hamburger
      ========================================= */
-  const navbar  = document.getElementById('navbar');
+  const navbar = document.getElementById('navbar');
   const hamburger = document.getElementById('nav-hamburger');
   const mobileMenu = document.getElementById('nav-mobile');
   const mobileLinks = mobileMenu?.querySelectorAll('a');
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
      SMOOTH SCROLL for anchor links
      ========================================= */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href').slice(1);
       const target = document.getElementById(targetId);
       if (target) {
