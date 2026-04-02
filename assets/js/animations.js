@@ -1,5 +1,5 @@
 /* ============================================
-   SHARMA'S GLOBAL EXPORT EXCHANGE
+   GLOBAL EXPORT EXCHANGE
    Animations — animations.js
    (Particle canvas + Intersection Observer reveals)
    ============================================ */
@@ -31,7 +31,7 @@ function initParticleCanvas(canvasId) {
     this.gold = Math.random() > 0.65; // 35% gold, rest white
   }
 
-  Particle.prototype.update = function() {
+  Particle.prototype.update = function () {
     this.x += this.vx;
     this.y += this.vy;
     if (this.x < 0) this.x = W;
@@ -40,7 +40,7 @@ function initParticleCanvas(canvasId) {
     if (this.y > H) this.y = 0;
   };
 
-  Particle.prototype.draw = function() {
+  Particle.prototype.draw = function () {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
     ctx.fillStyle = this.gold
@@ -189,7 +189,7 @@ const CHATBOT_QA = [
   { q: ['countries', 'where do you ship', 'which countries', 'destination'], a: "We ship globally! Submit an RFQ with your destination country and we'll provide a shipping quote." },
   { q: ['confidential', 'nda', 'privacy', 'inquiry'], a: "Absolutely. All inquiries are handled under strict confidentiality. We can also sign an NDA upon request." },
   { q: ['quote', 'price', 'pricing', 'how do i get'], a: "Use our RFQ page or contact us directly on WhatsApp at +91-9810818274 for a quick response." },
-  { q: ['registered', 'iec', 'gst', 'india', 'legit', 'legitimate'], a: "Yes! Sharma's Global Export Exchange is a registered Indian export firm with IEC and GST compliance." },
+  { q: ['registered', 'iec', 'gst', 'india', 'legit', 'legitimate'], a: "Yes! Global Export Exchange is a registered Indian export firm with IEC and GST compliance." },
   { q: ['hello', 'hi', 'hey', 'greetings'], a: "Hello! 👋 I'm the SGE trade assistant. How can I help you today? You can ask about shipping, payments, products, or documentation." },
 ];
 
